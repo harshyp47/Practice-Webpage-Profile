@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyProfile</title>
+
+	<meta name="viewport" width="device-width" initial-scale="1" /> 
+
+	<script type="text/javascript">
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "More>>";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Less>>";
+    moreText.style.display = "inline";
+  }
+} 
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="cssprofile/style.css">
+
+</head>
+<body>
+
+	<div>
+		<img class="cover" src="cover.jpg" alt="Profilecover"/>
+		<center><img class="profile" src="Profile.png" alt="profile"/></center>
+		<center><h3 class="name">Harsh Parmar </h3></center>
+		<center><h3 class="occu">Professor, NIIT </h3></center>
+	</div>
+
+
+	<div>
+		<h3 class="abouttext">About</h3>
+	</div>
+
+	<div class="box">
+		<p  align="justify" class="aboutpara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, <span id="dots">...</span><span id="more">sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi</span></p>
+
+		<button onclick="myFunction()" id="myBtn">More>></button>
+		
+	</div>
+
+	<div>
+		<h3 class="posttext">Posts</h3>
+	</div>
+
+	<div class="box">
+		<p  align="justify" class="postpara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi <br>
+			<br>
+			<br>
+			<br>
+
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi
+		</p>
+
+		<img align="right" class="penguin" src="penguin.png" alt="penguinphoto">
+		<img align="right" class="apple" src="apple.png" alt="applephoto">
+	</div>
+
+
+
+</body>
+</html>
